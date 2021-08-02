@@ -1,0 +1,165 @@
+@import "_theme-color-variables";
+@each $key, $val in $colors {
+    .theme-#{"" + $key} {
+        .blockquote {
+            border-left-color: get-theme-variable-by-color(
+                $key,
+                ""
+            );
+        }
+        .card {
+            .card-header {
+                .card-tools {
+                    li {
+                        a {
+                            &:hover {
+                                i {
+                                    color: get-theme-variable-by-color(
+                                        $key,
+                                        ""
+                                    );
+                                }
+                            }
+                        }
+                        &.show {
+                            i {
+                                color: get-theme-variable-by-color($key, "");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .block-header {
+            .breadcrumb {
+                li.active {
+                    color: get-theme-variable-by-color($key, "");
+                }
+            }
+        }
+        .navbar {
+            background-color: get-theme-variable-by-color($key, "");
+        }
+
+        .navbar-brand {
+            color: get-theme-variable-by-color($key, "-navbar-brand");
+
+            &:hover {
+                color: get-theme-variable-by-color($key, "-navbar-brand_hover");
+            }
+
+            &:active {
+                color: get-theme-variable-by-color(
+                    $key,
+                    "-navbar-brand_active"
+                );
+            }
+
+            &:focus {
+                color: get-theme-variable-by-color($key, "-navbar-brand_focus");
+            }
+        }
+
+        .nav {
+            > li {
+                > a {
+                    color: get-theme-variable-by-color($key, "-nav-anchor");
+
+                    &:hover {
+                        background-color: get-theme-variable-by-color(
+                            $key,
+                            "-nav-anchor_hover"
+                        );
+                    }
+
+                    &:focus {
+                        background-color: get-theme-variable-by-color(
+                            $key,
+                            "-nav-anchor_focus"
+                        );
+                    }
+                }
+            }
+
+            .open {
+                > a {
+                    background-color: get-theme-variable-by-color(
+                        $key,
+                        "-nav-anchor-opened"
+                    );
+
+                    &:hover {
+                        background-color: get-theme-variable-by-color(
+                            $key,
+                            "-nav-anchor-opened_hover"
+                        );
+                    }
+
+                    &:focus {
+                        background-color: get-theme-variable-by-color(
+                            $key,
+                            "-nav-anchor-opened_focus"
+                        );
+                    }
+                }
+            }
+        }
+
+        .bars {
+            color: get-theme-variable-by-color($key, "-bar");
+        }
+
+        .sidebar {
+            .menu {
+                .list {
+                    li:not(.header) {
+                        &.active,
+                        &:hover {
+                            background-color: get-theme-variable-by-color(
+                                $key,
+                                "-menu-list-active"
+                            );
+
+                            > :first-child {
+                                i,
+                                span {
+                                    color: get-theme-variable-by-color(
+                                        $key,
+                                        ""
+                                    );
+                                }
+                            }
+                        }
+                    }
+
+                    .toggled {
+                        background-color: get-theme-variable-by-color(
+                            $key,
+                            "-menu-list-toggled"
+                        );
+                    }
+
+                    .ml-menu {
+                        background-color: get-theme-variable-by-color(
+                            $key,
+                            "-menu-list-submenu"
+                        );
+                    }
+                }
+            }
+
+            .legal {
+                background-color: get-theme-variable-by-color(
+                    $key,
+                    "-legal-bg"
+                );
+
+                .copyright {
+                    a {
+                        color: get-theme-variable-by-color($key, "") !important;
+                    }
+                }
+            }
+        }
+    }
+}

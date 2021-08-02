@@ -1,0 +1,139 @@
+$border-radius: 0px !important;
+
+@import "+/bootstrap/scss/bootstrap-grid.scss";
+@import "+/bootstrap/scss/bootstrap-reboot.scss";
+
+//TODO wave-ripple qui ne disparais pas .
+
+/* fallback */
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/static/fonts/material-icon.woff2) format("woff2");
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+@import url(../../node_modules/prismjs/themes/prism.css);
+@import url(../../node_modules/animate.css/animate.css);
+@import url(../../node_modules/nouislider/distribute/nouislider.min.css);
+@import url(../../node_modules/jquery.spinner/dist/css/bootstrap-spinner.min.css);
+$zmdi-font-path: "../../node_modules/material-design-iconic-font/dist/fonts";
+@import "+/material-design-iconic-font/scss/material-design-iconic-font.scss";
+@import "+/sweetalert2/src/sweetalert2.scss";
+@import "+/bootstrap-colorpicker/src/sass/colorpicker.scss";
+@import url(../../node_modules/jquery.spinner/dist/css/bootstrap-spinner.min.css);
+@import url(../../node_modules/bootstrap-select/dist/css/bootstrap-select.css);
+@import url(../../node_modules/bootstrap-tagsinput/src/bootstrap-tagsinput.css);
+@import url(../../node_modules/bootstrap-tagsinput/src/bootstrap-tagsinput-typeahead.css);
+@import url(../../node_modules/daterangepicker/daterangepicker.css);
+@import "+/select2/src/scss/core.scss";
+// @import '+/trumbowyg/dist/ui/icons.svg';
+@import "+/trumbowyg/dist/ui/sass/trumbowyg.scss";
+@import "+/trumbowyg/dist/plugins/colors/ui/sass/trumbowyg.colors.scss";
+@import "+/trumbowyg/dist/plugins/highlight/ui/sass/trumbowyg.highlight.scss";
+@import "+/trumbowyg/dist/plugins/mathml/ui/sass/trumbowyg.mathml.scss";
+@import "+/trumbowyg/dist/plugins/mention/ui/sass/trumbowyg.mention.scss";
+@import "+/trumbowyg/dist/plugins/table/ui/sass/trumbowyg.table.scss";
+$image-path-prefix: "../../node_modules/ContentTools/build/images/";
+@import "+/ContentTools/src/styles/content-tools.scss";
+@import url(../../node_modules/dropzone/dist/dropzone.css);
+@import url(../../node_modules/leaflet/dist/leaflet.css);
+@import "+/bootstrap-table/src/bootstrap-table.scss";
+@import url(../../node_modules/bootstrap-table/dist/extensions/cell-input/bootstrap-table-cell-input.css);
+@import url(../../node_modules/bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.css);
+@import url(../../node_modules/bootstrap-table/dist/extensions/fixed-columns/bootstrap-table-fixed-columns.css);
+@import url(../../node_modules/bootstrap-table/dist/extensions/group-by-v2/bootstrap-table-group-by.css);
+@import url(../../node_modules/bootstrap-table/dist/extensions/page-jump-to/bootstrap-table-page-jump-to.css);
+@import url(../../node_modules/bootstrap-table/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.css);
+@import url(../../node_modules/bootstrap-table/dist/extensions/sticky-header/bootstrap-table-sticky-header.css);
+@import url(../../node_modules/bootstrap-table/dist/themes/materialize/bootstrap-table-materialize.css);
+
+@import url(../../node_modules/blueimp-gallery/css/blueimp-gallery.min.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bars-1to10.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bars-horizontal.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bars-movie.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bars-pill.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bars-reversed.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bars-square.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/bootstrap-stars.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/css-stars.css);
+@import url(../../node_modules/jquery-bar-rating/dist/themes/fontawesome-stars-o.css);
+.br-theme-fontawesome-stars-o .br-widget a {
+    &:nth-child(2n + 2) {
+        display: none !important;
+    }
+    &.br-fractional:after {
+        color: #edb867;
+    }
+    &.br-selected:after {
+        color: #edb867;
+    }
+}
+@import url(../../node_modules/fullcalendar/dist/fullcalendar.css);
+@import url(../../node_modules/fullcalendar/dist/fullcalendar.print.css);
+@import url(../../node_modules/waitMe/waitMe.css);
+@import url(../../node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css);
+@import url(../../node_modules/tarteaucitronjs/css/tarteaucitron.css);
+@import url(../../node_modules/morris.js/morris.css);
+@import url(../../node_modules/editable-table/index.css);
+/*
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-barber-shop.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-big-counter.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-bounce.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-center-atom.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-center-circle.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-center-radar.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-center-simple.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-corner-indicator.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-fill-left.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-flash.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-flat-top.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-loading-bar.css);
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-mac-osx.css);*/
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-material.css); /*
+@import url(../../node_modules/pace-progressbar/themes/blue/pace-theme-minimal.css);*/
+//@import url(../../node_modules/chosen-js/chosen.css);
+@import "+/multiselect/scss/multi-select.scss";
+@import url(../../node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css);
+$line-height-computed: 10;
+$padding-base-vertical: 5;
+$padding-small-vertical: 2;
+$padding-large-vertical: 8;
+$padding-base-horizontal: 5;
+$padding-large-horizontal: 8;
+$padding-small-horizontal: 2;
+$line-height-base: 8;
+$font-size-large: 16;
+$font-size-small: 10;
+$flag-icon-css-path: "../../node_modules/flag-icon-css/flags";
+@import "+/flag-icon-css/sass/flag-icon.scss";
+@import "+/node-waves/src/scss/waves.scss";
+
+/*
+$ionicons-font-path: "../../node_modules/ionicons/dist/fonts";
+@import '+/ionicons/dist/scss/ionicons.scss';*/
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "+/font-awesome/scss/font-awesome.scss";
+@import url(../../node_modules/bootstrap-social/bootstrap-social.css);
+@import url(../../node_modules/messenger/build/css/messenger.css);
+@import url(../../node_modules/messenger/build/css/messenger-spinner.css);
+@import url(../../node_modules/messenger/build/css/messenger-theme-flat.css);
+@import "./scss/nestable";
+@import "./scss/custom";
